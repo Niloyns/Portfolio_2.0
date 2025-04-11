@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(images/background.png);
+  background-position: center;
+  background-size: cover;
+  padding: 10px 10%;
+  overflow: hidden;
+  color: black;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  min-width: 35vw;
+  justify-content: space-around;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  border-radius: 3px;
+  text-decoration: underline;
+  color: darkgrey;
+}
+
+.download-btn {
+  background-color: black;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: gray;
+}
+
+.download-btn a {
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.containt {
+  margin-top: 10%;
+  max-width: 45vw;
+}
+
+.containt h1 {
+  font-size: 70px;
+  color: black;
+  animation-delay: 0.5s;
+}
+
+.containt p {
+  margin: 10px 0 30px;
+  animation-delay: 1s;
+}
+
+#element {
+  color: red;
+}
+
+.image {
+  max-width: 45vw;
+}
+
+.image img {
+  height: 600px;
+  animation-delay: 1.5s;
+  padding-top: 20px 10px 0 0;
+}
+
+.anim {
+  opacity: 0;
+  transform: translateY(30px); /* vertical movement */
+  animation: moveup 0.8s linear forwards;
+}
+
+@keyframes moveup {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Niloy Sarkar</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  </head>
+  <body>
+    <div class="hero">
+      <header>
+        <nav>
+          <h2>Portfolio</h2>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+          <div class="download-btn">
+            <a href="#">Download</a>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <div class="container">
+          <div class="containt">
+            <h1 class="anim">
+              Niloy <br />
+              &nbsp;&nbsp;&nbsp; Sarkar
+            </h1>
+            <p class="anim">I am a <span id="element"></span></p>
+
+            <p class="anim">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Praesentium amet veritatis quos at voluptatibus aliquam odio
+              dolorum non laboriosam cumque! Lorem ipsum dolor, sit amet
+              consectetur adipisicing elit. Atque, cumque.
+            </p>
+          </div>
+          <div class="image">
+            <img src="./images/profilePhoto.png" class="anim" alt="" />
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Software Engineer",
+          "Front End Developer",
+          "Back End Developer",
+          "MERN Stack Developer",
+          "Full Stack Developer",
+        ],
+        typeSpeed: 90,
+        loop: true,
+      });
+    </script>
+    <script src="./script.js"></script>
+  </body>
+</html>
