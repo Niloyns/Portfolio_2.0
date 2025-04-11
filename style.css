@@ -79,17 +79,21 @@ nav ul li a:hover {
 }
 
 #element {
-  color: red;
+  color: brown;
+}
+
+.spancolor {
+  color: brown;
 }
 
 .image {
   max-width: 45vw;
+  padding-top: 20px;
 }
 
 .image img {
   height: 600px;
   animation-delay: 1.5s;
-  padding-top: 20px 10px 0 0;
 }
 
 .anim {
