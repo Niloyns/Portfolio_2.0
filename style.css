@@ -1,10 +1,15 @@
+/* Reset and Base Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
 }
 
+/* Hero Section */
 .hero {
   width: 100%;
   min-height: 100vh;
@@ -16,6 +21,7 @@
   color: black;
 }
 
+/* Navigation Bar */
 nav {
   display: flex;
   justify-content: space-between;
@@ -40,6 +46,7 @@ nav ul li a:hover {
   color: darkgrey;
 }
 
+/* Download Button */
 .download-btn {
   background-color: black;
   color: white;
@@ -57,11 +64,13 @@ nav ul li a:hover {
   text-decoration: none;
 }
 
+/* Content Container */
 .container {
   display: flex;
   justify-content: space-between;
 }
 
+/* Left Content */
 .containt {
   margin-top: 10%;
   max-width: 45vw;
@@ -70,22 +79,26 @@ nav ul li a:hover {
 .containt h1 {
   font-size: 70px;
   color: black;
-  animation-delay: 0.5s;
+}
+
+.name {
+  font-size: 150px;
+}
+
+.titel {
+  font-size: 150px;
+  margin-left: 200px;
 }
 
 .containt p {
   margin: 10px 0 30px;
-  animation-delay: 1s;
 }
 
 #element {
   color: brown;
 }
 
-.spancolor {
-  color: brown;
-}
-
+/* Image Container */
 .image {
   max-width: 45vw;
   padding-top: 20px;
@@ -93,18 +106,26 @@ nav ul li a:hover {
 
 .image img {
   height: 600px;
-  animation-delay: 1.5s;
 }
 
-.anim {
-  opacity: 0;
-  transform: translateY(30px); /* vertical movement */
-  animation: moveup 0.8s linear forwards;
+/* Skills Section */
+.skills {
+  height: 600px;
+  display: flex;
+  align-items: center;
 }
 
-@keyframes moveup {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.skills ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.skills ul li {
+  background-color: black;
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
 }
