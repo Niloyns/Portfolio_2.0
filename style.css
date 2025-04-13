@@ -1,4 +1,6 @@
-/* Reset and Base Styles */
+/* ---------------------------------------
+   Base Reset and Global Styles
+---------------------------------------- */
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +11,9 @@
   font-variation-settings: "wdth" 100;
 }
 
-/* Hero Section */
+/* ---------------------------------------
+   Hero Section Styles
+---------------------------------------- */
 .hero {
   width: 100%;
   min-height: 100vh;
@@ -21,7 +25,9 @@
   color: black;
 }
 
-/* Navigation Bar */
+/* ---------------------------------------
+   Navigation Bar
+---------------------------------------- */
 nav {
   display: flex;
   justify-content: space-between;
@@ -46,7 +52,9 @@ nav ul li a:hover {
   color: darkgrey;
 }
 
-/* Download Button */
+/* ---------------------------------------
+   Resume Download Button
+---------------------------------------- */
 .download-btn {
   background-color: black;
   color: white;
@@ -64,13 +72,17 @@ nav ul li a:hover {
   text-decoration: none;
 }
 
-/* Content Container */
+/* ---------------------------------------
+   Main Content Container
+---------------------------------------- */
 .container {
   display: flex;
   justify-content: space-between;
 }
 
-/* Left Content */
+/* ---------------------------------------
+   Left Text Content
+---------------------------------------- */
 .containt {
   margin-top: 10%;
   max-width: 45vw;
@@ -98,7 +110,9 @@ nav ul li a:hover {
   color: brown;
 }
 
-/* Image Container */
+/* ---------------------------------------
+   Right Profile Image
+---------------------------------------- */
 .image {
   max-width: 45vw;
   padding-top: 20px;
@@ -108,19 +122,58 @@ nav ul li a:hover {
   height: 600px;
 }
 
-/* Skills Section */
-.skills {
+/* ---------------------------------------
+   Skills Section
+---------------------------------------- */
+.skillSection {
   height: 600px;
   display: flex;
+  justify-content: center;
   align-items: center;
+}
+
+/* Skill container with gradient mask and hidden scroll */
+.skillContainer {
+  overflow-x: scroll; /* enable horizontal scroll */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+
+  /* Fade mask effect on left and right sides */
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent,
+    #fff 20%,
+    #fff 80%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    90deg,
+    transparent,
+    #fff 20%,
+    #fff 80%,
+    transparent
+  );
+}
+
+/* Hide scrollbar in WebKit browsers */
+.skillContainer::-webkit-scrollbar {
+  display: none;
+}
+
+/* Pause animation on hover */
+/* .skillContainer:hover .skills {
+  animation-play-state: paused;
+} */
+
+/* Skill Lists */
+.skills {
+  margin-top: 10px;
 }
 
 .skills ul {
   display: flex;
   list-style: none;
-  justify-content: space-evenly;
   gap: 10px;
-  flex-wrap: wrap;
 }
 
 .skills ul li {
@@ -128,4 +181,37 @@ nav ul li a:hover {
   color: white;
   padding: 30px;
   border-radius: 10px;
+}
+
+/* ---------------------------------------
+   Scrolling Animations
+---------------------------------------- */
+
+/* Slower infinite scroll animations */
+.skill_1 {
+  animation: scroll-left 20s linear infinite;
+}
+
+.skill_2 {
+  animation: scroll-right 40s linear infinite;
+}
+
+/* Scroll left keyframes */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Scroll right keyframes */
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }

@@ -5,21 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Niloy Sarkar</title>
 
-    <!-- Link to external stylesheet -->
-    <link rel="stylesheet" href="./style.css" />
-
-    <!-- Google Fonts: Roboto -->
+    <!-- Google Fonts -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
 
-    <!-- Typed.js for typing animation -->
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Typed.js -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   </head>
   <body>
     <div class="hero">
-      <!-- Header with navigation -->
       <header>
         <nav>
           <h2>Portfolio</h2>
@@ -30,28 +29,23 @@
             <li><a href="#">Project</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
-          <!-- Resume download button -->
           <div class="download-btn">
             <a href="./document/NiloyResume_9.pdf">Download</a>
           </div>
         </nav>
       </header>
 
-      <!-- Main content -->
       <main>
         <section>
           <div class="container">
-            <!-- Intro text -->
             <div class="containt">
               <h1 class="anim">
                 <div class="name">Niloy</div>
                 <div class="titel">Sarkar</div>
               </h1>
               <p class="anim">
-                <strong> I am a <span id="element"></span></strong>
+                <strong>I am a <span id="element"></span></strong>
               </p>
-
-              <!-- About section -->
               <p class="anim about" id="about">
                 I’m a passionate Full Stack Web Developer and Software Engineer
                 skilled in Java, Python, JavaScript, Node.js, Express.js,
@@ -63,7 +57,6 @@
               </p>
             </div>
 
-            <!-- Profile Image -->
             <div class="image">
               <img
                 src="./images/profilePhoto.png"
@@ -74,38 +67,65 @@
           </div>
         </section>
 
-        <!-- Skills section -->
-        <section class="skills">
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Sass</li>
-            <li>Bootstrap</li>
-            <li>JavaScript</li>
-            <li>Java</li>
-            <li>Python</li>
-            <li>Node.js</li>
-            <li>Express.js</li>
-            <li>MongoDB</li>
-            <li>SQL</li>
-            <li>Docker</li>
-            <li>Git</li>
-            <li>GitHub</li>
-            <li>WordPress</li>
-            <li>EJS</li>
-            <li>React.ja</li>
-            <li>JWT</li>
-            <li>Passport.js</li>
-            <li>npm</li>
-          </ul>
+        <section class="skillSection">
+          <div class="skillContainer">
+            <div class="skills skill_1">
+              <ul>
+                <!-- Repeated skill items for infinite scroll -->
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Sass</li>
+                <li>Bootstrap</li>
+                <li>JavaScript</li>
+                <li>Java</li>
+                <li>Python</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>MongoDB</li>
+                <li>SQL</li>
+                <li>Docker</li>
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>WordPress</li>
+                <li>EJS</li>
+                <li>React.js</li>
+                <li>JWT</li>
+                <li>Passport.js</li>
+                <li>npm</li>
+              </ul>
+            </div>
+            <div class="skills skill_2">
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Sass</li>
+                <li>Bootstrap</li>
+                <li>JavaScript</li>
+                <li>Java</li>
+                <li>Python</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>MongoDB</li>
+                <li>SQL</li>
+                <li>Docker</li>
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>WordPress</li>
+                <li>EJS</li>
+                <li>React.js</li>
+                <li>JWT</li>
+                <li>Passport.js</li>
+                <li>npm</li>
+              </ul>
+            </div>
+          </div>
         </section>
       </main>
     </div>
 
-    <!-- GSAP animation library -->
+    <!-- GSAP -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
-
-    <!-- Custom JavaScript file -->
+    <!-- Custom Script -->
     <script src="./script.js"></script>
   </body>
 </html>
