@@ -33,6 +33,16 @@ gsap
     0
   )
   .from(
+    "nav ul li",
+    {
+      y: -100, // Slide nav in from top
+      duration: 2,
+      ease: "power2.out",
+      stagger: 0.3,
+    },
+    0
+  )
+  .from(
     ".name",
     {
       x: -100, // Slide name from left
@@ -47,7 +57,7 @@ gsap
     ".titel",
     {
       opacity: 0.5,
-      y: 30, // Slide title from below
+      y: 50, // Slide title from below
       duration: 4,
       repeat: -1,
       yoyo: true,
@@ -56,12 +66,35 @@ gsap
     0
   )
   .from(
-    ".about",
+    ".typed_skill",
+    {
+      opacity: 0,
+      y: 100,
+      duration: 4,
+      ease: "power2.out",
+    },
+    0
+  )
+  .from(
+    ".sumary",
     {
       opacity: 0,
       y: 100, // Fade and move about section up
+      delay: 0.5,
       duration: 4,
       ease: "power2.out",
+    },
+    0
+  )
+  .from(
+    ".social_icon i",
+    {
+      opacity: 0,
+      y: 100,
+      delay: 1,
+      duration: 2, // Reduced duration for each icon
+      ease: "power2.out",
+      stagger: 0.3, // Stagger the animation by 0.2 seconds
     },
     0
   );

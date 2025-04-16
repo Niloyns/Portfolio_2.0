@@ -10,24 +10,31 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/d646a66da9.js"
+      crossorigin="anonymous"
+    ></script>
 
-    <!-- Stylesheet -->
+    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="./style.css" />
 
-    <!-- Typed.js -->
+    <!-- Typed.js Library -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   </head>
+
   <body>
     <div class="hero">
+      <!-- Navigation -->
       <header>
         <nav>
           <h2>Portfolio</h2>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Project</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#home-section">Home</a></li>
+            <li><a href="#about-section">About</a></li>
+            <li><a href="#skills-section">Skills</a></li>
+            <li><a href="#project-section">Projects</a></li>
+            <li><a href="#contact-section">Contact</a></li>
           </ul>
           <div class="download-btn">
             <a href="./document/NiloyResume_9.pdf" target="_blank">Download</a>
@@ -36,27 +43,50 @@
       </header>
 
       <main>
-        <section>
+        <!-- Hero Section -->
+        <section class="section" id="home-section">
           <div class="container">
             <div class="containt">
-              <h1 class="anim">
+              <h1>
                 <div class="name">Niloy</div>
                 <div class="titel">Sarkar</div>
               </h1>
-              <p class="anim">
+
+              <!-- Typing Effect -->
+              <p class="typed_skill">
                 <strong>I am a <span id="element"></span></strong>
               </p>
-              <p class="anim about" id="about">
-                I’m a passionate Full Stack Web Developer and Software Engineer
-                skilled in Java, Python, JavaScript, Node.js, Express.js,
-                MongoDB, and SQL. With hands-on experience in modern frameworks,
-                REST APIs, and tools like Git, Docker, and WordPress, I build
-                scalable, user-friendly web applications. I’m a quick learner,
-                problem-solver, and team player committed to writing clean code
-                and staying up-to-date with the latest tech trends.
+
+              <!-- Summary -->
+              <p class="sumary">
+                Experienced Full Stack Developer with expertise in Java, Python,
+                JavaScript, and modern web frameworks, building scalable
+                applications. Proficient in database management (MongoDB, SQL)
+                and DevOps tools (Git, Docker), focused on delivering clean,
+                efficient code.
               </p>
+
+              <!-- Social Links -->
+              <div class="social_icon">
+                <a href="https://github.com/Niloyns" target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <a href="https://www.linkedin.com/in/niloy-ns/" target="_blank"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+                <a href="https://www.instagram.com/niloyns/" target="_blank"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a href="YOUR_FACEBOOK_URL" target="_blank"
+                  ><i class="fa-brands fa-square-facebook"></i
+                ></a>
+                <a href="https://x.com/niloysarkarNS" target="_blank"
+                  ><i class="fa-brands fa-square-x-twitter"></i
+                ></a>
+              </div>
             </div>
 
+            <!-- Profile Image -->
             <div class="image">
               <img
                 src="./images/profilePhoto.png"
@@ -67,11 +97,63 @@
           </div>
         </section>
 
-        <section class="skillSection">
+        <!-- About Section -->
+        <section class="section about-section" id="about-section">
+          <h3>About</h3>
+          <div class="about-container">
+            <div class="about">
+              <p>
+                Hello! I’m a passionate and motivated Full Stack Web Developer
+                and Software Engineer with practical experience in developing
+                responsive, user-friendly web applications. My skill set
+                includes Java, Python, HTML, CSS, Bootstrap, Sass, JavaScript,
+                jQuery, Node.js, npm, Express.js, EJS, MongoDB, and SQL. I’ve
+                worked with RESTful APIs, JWT, Passport.js, and follow the MVC
+                architecture for organized and maintainable code. I’m also
+                familiar with WordPress for content management and use Git,
+                GitHub, and Docker to manage version control and deployment. I
+                enjoy solving real-world problems through code, constantly
+                exploring new technologies, and refining my skills to become a
+                better developer every day. I'm excited to contribute to
+                collaborative projects and continue growing in this
+                ever-evolving field.
+              </p>
+            </div>
+
+            <!-- Education Block -->
+            <div class="edu-container">
+              <h3>Education</h3>
+              <div class="education">
+                <div class="edu-item">
+                  <h4>Diploma</h4>
+                  <p>
+                    <strong>Institute:</strong> Regent Institute Of Science And
+                    Technology
+                  </p>
+                  <p><strong>Year:</strong> 2018 - 2020</p>
+                  <p><strong>Grade:</strong> 7.6 CGPA</p>
+                </div>
+
+                <div class="edu-item">
+                  <h4>Bachelor of Technology</h4>
+                  <p>
+                    <strong>College:</strong> Murshidabad College of Engineering
+                    & Technology
+                  </p>
+                  <p><strong>Year:</strong> 2020 - 2023</p>
+                  <p><strong>Grade:</strong> 8.45 CGPA</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skillSection section" id="skills-section">
           <div class="skillContainer">
+            <!-- Duplicated for infinite scroll effect -->
             <div class="skills skill_1">
               <ul>
-                <!-- Repeated skill items for infinite scroll -->
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>Sass</li>
@@ -120,12 +202,35 @@
             </div>
           </div>
         </section>
+
+        <!-- Projects Section -->
+        <section class="section" id="project-section">
+          <h2>Projects</h2>
+          <div class="project_container">
+            <!-- Project Item -->
+            <div class="project-box">
+              <img src="" alt="Project Screenshot" />
+              <div class="project_layar">
+                <h4>Todo API</h4>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+            <!-- Repeat Project Boxes -->
+            <!-- ... Copy the above project-box and change details for other projects ... -->
+          </div>
+        </section>
+
+        <!-- Contact Section (optional placeholder) -->
+        <section class="section" id="contact-section">
+          <h2>Contact</h2>
+          <p>You can add a contact form or email/social links here.</p>
+        </section>
       </main>
     </div>
 
-    <!-- GSAP -->
+    <!-- GSAP Animation Library -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
-    <!-- Custom Script -->
+    <!-- Custom JS -->
     <script src="./script.js"></script>
   </body>
 </html>

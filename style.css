@@ -9,6 +9,12 @@
   font-optical-sizing: auto;
   font-style: normal;
   font-variation-settings: "wdth" 100;
+  scrollbar-width: none;
+}
+
+.section {
+  height: 100vh;
+  width: auto;
 }
 
 /* ---------------------------------------
@@ -16,7 +22,7 @@
 ---------------------------------------- */
 .hero {
   width: 100%;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   background-image: url(images/background.png);
   background-position: center;
   background-size: cover;
@@ -49,7 +55,7 @@ nav ul li a {
 nav ul li a:hover {
   border-radius: 3px;
   text-decoration: underline;
-  color: darkgrey;
+  color: crimson;
 }
 
 /* ---------------------------------------
@@ -64,7 +70,7 @@ nav ul li a:hover {
 }
 
 .download-btn:hover {
-  background-color: gray;
+  background-color: crimson;
 }
 
 .download-btn a {
@@ -84,32 +90,62 @@ nav ul li a:hover {
    Left Text Content
 ---------------------------------------- */
 .containt {
-  margin-top: 10%;
+  margin-top: 5%;
   max-width: 45vw;
+  /* background-image: url("./images/AnimBG.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; */
 }
 
 .containt h1 {
-  font-size: 70px;
   color: black;
+  margin-bottom: 30px;
 }
 
 .name {
-  font-size: 150px;
+  font-size: 8rem;
 }
 
 .titel {
-  font-size: 150px;
-  margin-left: 200px;
+  font-size: 8rem;
+  margin-left: 10rem;
 }
 
 .containt p {
-  margin: 10px 0 30px;
+  margin: 0px 0 30px 0;
 }
 
 #element {
-  color: brown;
+  color: crimson;
 }
 
+.social_icon {
+  width: auto;
+  display: flex; /* Use flexbox for easy alignment */
+  align-items: center; /* Vertically center icons */
+}
+
+.social_icon a {
+  background-color: transparent;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  margin-right: 2rem;
+  color: black;
+  transition: color 0.2s ease, box-shadow 0.4s ease; /* Add transition for box-shadow */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  box-shadow: 0 0 6px 4px rgb(196, 246, 255);
+}
+
+.social_icon a:hover {
+  color: crimson;
+  box-shadow: 0 0 6px 4px black;
+}
 /* ---------------------------------------
    Right Profile Image
 ---------------------------------------- */
@@ -123,10 +159,77 @@ nav ul li a:hover {
 }
 
 /* ---------------------------------------
+   about Section
+---------------------------------------- */
+.about-section h3 {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.about-container {
+  height: 100%;
+  width: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about {
+  width: 45%;
+  padding: 30px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.education {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.edu-container {
+  width: 45%;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.edu-container h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.education {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.edu-item {
+  height: auto;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.edu-item h4 {
+  font-size: 15px;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.edu-item p {
+  margin: 4px 0;
+  color: #555;
+}
+
+/* ---------------------------------------
    Skills Section
 ---------------------------------------- */
 .skillSection {
-  height: 600px;
+  height: 800px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -214,4 +317,14 @@ nav ul li a:hover {
   100% {
     transform: translateX(0%);
   }
+}
+
+/* ---------------------------------------
+   Project Section
+---------------------------------------- */
+#project {
+  height: 100vh;
+  width: 80vw;
+}
+.project_container {
 }
