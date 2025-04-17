@@ -296,7 +296,7 @@ nav ul li a:hover {
 }
 
 .skill_2 {
-  animation: scroll-right 40s linear infinite;
+  animation: scroll-right 30s linear infinite;
 }
 
 /* Scroll left keyframes */
