@@ -95,6 +95,16 @@ gsap
     },
     0
   )
+  .from(
+    ".social_icon a",
+    {
+      opacity: 0,
+      y: 100,
+      delay: 1,
+      duration: 2,
+    },
+    0
+  )
 
   .from(
     ".social_icon i",

@@ -23,12 +23,15 @@
 ---------------------------------------- */
 .hero {
   width: 100%;
-  background-image: url(images/background.png); /* Hero background image */
-  background-position: center;
-  background-size: cover; /* Ensure background covers full area */
-  padding: 10px 10%; /* Responsive horizontal padding */
+  background: linear-gradient(
+    90deg,
+    rgb(100, 194, 231) 0%,
+    rgb(123, 224, 165) 50%,
+    rgb(174, 177, 255) 100%
+  );
+  padding: 10px 10%;
   overflow: hidden;
-  color: black; /* Default text color */
+  color: black;
 }
 
 /* ---------------------------------------
@@ -163,25 +166,26 @@ nav ul li a:hover {
 .about-section h3 {
   font-size: 50px;
   text-align: center;
-  margin-top: 10px;
+  padding: 50px 0;
 }
 
 /* Layout for About + Education side-by-side */
 .about-container {
-  height: 100%;
+  padding: 20px;
   width: auto;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  /* align-items: center; */
 }
 
 /* About Text */
 .about {
   width: 45%;
-  padding: 30px;
-  text-align: center;
+  padding: 20px;
+  text-align: justify;
+  line-height: 28px;
   font-size: 1.1rem;
-  overflow-wrap: break-word;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 /* Education Container */
@@ -195,10 +199,11 @@ nav ul li a:hover {
   width: 45%;
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 .edu-container h4 {
+  text-align: center;
   font-size: 28px;
   margin-bottom: 20px;
 }
@@ -245,7 +250,7 @@ nav ul li a:hover {
 
 /* Scrollable skill container with gradient mask on edges */
 .skillContainer {
-  height: 100%;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -333,6 +338,19 @@ nav ul li a:hover {
 #project {
   height: 100vh;
   width: 80vw;
+}
+
+.project_container {
+  display: flex;
+  overflow: scroll;
+}
+
+.project-box {
+  background-color: #555;
+  height: 80vh;
+  width: 50vw;
+  flex-shrink: 0;
+  margin: 0 5px;
 }
 
 /* Empty project container – add styles later */
