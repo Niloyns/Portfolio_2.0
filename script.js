@@ -132,7 +132,7 @@ gsap.from(".about", {
     start: "top 80%",
     end: "top 35%",
     scrub: 2,
-    markers: true,
+    e,
   },
 });
 
@@ -146,7 +146,6 @@ gsap.from(".edu-container", {
     start: "top 80%",
     end: "top 35%",
     scrub: 2,
-    markers: true,
   },
 });
 
