@@ -168,3 +168,30 @@ gsap.from(".skillSection h3", {
     scrub: 2,
   },
 });
+gsap.from(".project-section h2", {
+  scale: 0,
+  opacity: 0,
+  scrollTrigger: {
+    trigger: ".project-section h2",
+    start: "top 90%",
+    end: "top 35",
+    scrub: 2,
+  },
+});
+
+gsap.registerPlugin(ScrollTrigger);
+
+const container = document.querySelector(".project_container");
+
+gsap.to(container, {
+  x: () => -(container.scrollWidth - window.innerWidth), // key part
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".project-section",
+    start: "top top",
+    end: () => "+=" + (container.scrollWidth - window.innerWidth),
+    scrub: 1,
+    pin: true,
+    anticipatePin: 1,
+  },
+});

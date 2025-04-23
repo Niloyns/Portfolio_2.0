@@ -9,7 +9,7 @@
   font-optical-sizing: auto;
   font-style: normal;
   font-variation-settings: "wdth" 100;
-  scrollbar-width: none; /* Hide scrollbar in Firefox */
+  scrollbar-width: none;
 }
 
 /* General section layout */
@@ -25,9 +25,9 @@
   width: 100%;
   background: linear-gradient(
     90deg,
-    rgb(100, 194, 231) 0%,
-    rgb(123, 224, 165) 50%,
-    rgb(174, 177, 255) 100%
+    rgb(195, 238, 255) 0%,
+    rgb(187, 248, 213) 50%,
+    rgb(210, 211, 255) 100%
   );
   padding: 10px 10%;
   overflow: hidden;
@@ -140,7 +140,7 @@ nav ul li a:hover {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  box-shadow: 0 0 6px 4px rgb(196, 246, 255); /* Glowing border */
+  box-shadow: 0 0 6px 4px rgb(65, 220, 247); /* Glowing border */
 }
 
 .social_icon a:hover {
@@ -163,6 +163,7 @@ nav ul li a:hover {
 /* ---------------------------------------
    About Section
 ---------------------------------------- */
+
 .about-section h3 {
   font-size: 50px;
   text-align: center;
@@ -335,24 +336,68 @@ nav ul li a:hover {
 /* ---------------------------------------
    Project Section
 ---------------------------------------- */
-#project {
+.project-section {
+  position: relative;
   height: 100vh;
-  width: 80vw;
+  overflow: hidden;
+  padding: 50px 0;
+}
+
+.project-section h2 {
+  text-align: center;
+  font-size: 50px;
+  padding: 50px 0 30px 0;
+}
+
+.project_wrapper {
+  height: 100%;
+  overflow: hidden;
 }
 
 .project_container {
   display: flex;
-  overflow: scroll;
+  padding-left: 10rem;
+  height: 80vh;
+  width: max-content; /* Ensures full width of all items */
 }
 
 .project-box {
-  background-color: #555;
-  height: 80vh;
-  width: 50vw;
+  position: relative;
+  height: 50vh;
+  width: 40vw;
   flex-shrink: 0;
-  margin: 0 5px;
+  border-radius: 30px;
+  margin: 0 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease-in-out;
 }
 
-/* Empty project container – add styles later */
-.project_container {
+.project-box img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.project_layar {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 20px;
+  width: 100%;
+  transform: translateY(100%);
+  transition: transform 0.4s ease-in-out;
+}
+
+.project-box:hover .project_layar {
+  transform: translateY(0);
+}
+
+.project_layar h4 {
+  margin: 0 0 10px;
+}
+
+.project_layar a {
+  color: #ff9800;
+  text-decoration: none;
 }
