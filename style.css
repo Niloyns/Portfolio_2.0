@@ -10,6 +10,11 @@
   font-style: normal;
   font-variation-settings: "wdth" 100;
   scrollbar-width: none;
+  color: #169976;
+}
+
+body {
+  background: black;
 }
 
 /* General section layout */
@@ -21,7 +26,7 @@
 /* ---------------------------------------
    Hero Section Styles
 ---------------------------------------- */
-.hero {
+/* .hero {
   width: 100%;
   background: linear-gradient(
     90deg,
@@ -32,7 +37,7 @@
   padding: 10px 0%;
   overflow: hidden;
   color: black;
-}
+} */
 
 #home-section {
   padding: 0 10%;
@@ -56,33 +61,36 @@ nav ul {
 
 nav ul li a {
   text-decoration: none; /* Remove underline */
-  color: black;
+  color: #169976;
   transition: color 0.3s ease; /* Smooth color transition */
 }
 
 nav ul li a:hover {
   border-radius: 3px;
   text-decoration: underline;
-  color: crimson; /* Hover color */
+  color: #1dcd9f; /* Hover color */
 }
 
 /* ---------------------------------------
    Resume Download Button
 ---------------------------------------- */
 .download-btn {
-  background-color: black;
-  color: white;
+  background-color: #169976;
   padding: 4px 8px;
   border-radius: 5px;
   transition: background-color 0.3s ease;
 }
 
 .download-btn:hover {
-  background-color: crimson;
+  background-color: #1dcd9f;
+
+  a {
+    color: crimson;
+  }
 }
 
 .download-btn a {
-  color: white;
+  color: black;
   text-decoration: none;
 }
 
@@ -145,12 +153,12 @@ nav ul li a:hover {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  box-shadow: 0 0 6px 4px rgb(65, 220, 247); /* Glowing border */
+  box-shadow: 0 0 6px 4px #169976; /* Glowing border */
 }
 
 .social_icon a:hover {
   color: crimson;
-  box-shadow: 0 0 6px 4px black;
+  box-shadow: 0 0 6px 4px #1dcd9f;
 }
 
 /* ---------------------------------------
@@ -163,8 +171,18 @@ nav ul li a:hover {
 
 .image img {
   height: 600px;
+  /* filter: drop-shadow(0 0 10px #169976) drop-shadow(0 0 20px #169976); */
+  animation: glowPulse 1s infinite alternate;
 }
 
+@keyframes glowPulse {
+  from {
+    filter: drop-shadow(0 0 10px #169976) drop-shadow(0 0 20px #169976);
+  }
+  to {
+    filter: drop-shadow(0 0 20px #1dcd9f) drop-shadow(0 0 20px #1dcd9f);
+  }
+}
 /* ---------------------------------------
    About Section
 ---------------------------------------- */
@@ -189,9 +207,10 @@ nav ul li a:hover {
   width: 45%;
   padding: 20px;
   text-align: justify;
+  border-radius: 20px;
   line-height: 28px;
   font-size: 1.1rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 6px 0 rgb(29, 205, 159);
 }
 
 /* Education Container */
@@ -204,14 +223,14 @@ nav ul li a:hover {
 .edu-container {
   width: 45%;
   padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  box-shadow: 0 2px 6px rgb(29, 205, 159);
 }
 
 .edu-container h4 {
   text-align: center;
   font-size: 28px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 /* Education List Styling */
@@ -232,12 +251,16 @@ nav ul li a:hover {
 .edu-item h4 {
   font-size: 15px;
   margin-bottom: 8px;
-  color: #222;
+  color: crimson;
 }
 
 .edu-item p {
   margin: 4px 0;
   color: #555;
+}
+
+.spancolor {
+  color: crimson;
 }
 
 /* ---------------------------------------

@@ -52,7 +52,7 @@ gsap
     ".name",
     {
       x: -100, // Slide name from left
-      color: "rgb(0, 0, 135)", // Start with blue color
+      color: "#1dcd9f", // Start with blue color
       duration: 4,
       repeat: -1,
       yoyo: true,
@@ -63,7 +63,7 @@ gsap
   .from(
     ".titel",
     {
-      opacity: 0.5,
+      color: "#1dcd9f",
       y: 50, // Slide title from below
       duration: 4,
       repeat: -1,
