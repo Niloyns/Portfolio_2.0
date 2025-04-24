@@ -29,9 +29,13 @@
     rgb(187, 248, 213) 50%,
     rgb(210, 211, 255) 100%
   );
-  padding: 10px 10%;
+  padding: 10px 0%;
   overflow: hidden;
   color: black;
+}
+
+#home-section {
+  padding: 0 10%;
 }
 
 /* ---------------------------------------
@@ -40,6 +44,7 @@
 nav {
   display: flex;
   justify-content: space-between; /* Space between nav items */
+  padding: 10px 10%;
 }
 
 nav ul {
