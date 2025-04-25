@@ -18,58 +18,31 @@ body {
   overflow-x: hidden;
 }
 
-/* General section layout */
-.section {
-  /* height: 100vh; */
-  /* width: auto; */
-}
-
-/* ---------------------------------------
-   Hero Section Styles
----------------------------------------- */
-/* .hero {
-  width: 100%;
-  background: linear-gradient(
-    90deg,
-    rgb(195, 238, 255) 0%,
-    rgb(187, 248, 213) 50%,
-    rgb(210, 211, 255) 100%
-  );
-  padding: 10px 0%;
-  overflow: hidden;
-  color: black;
-} */
-
-#home-section {
-  padding: 0 10%;
-}
-
 /* ---------------------------------------
    Navigation Bar
 ---------------------------------------- */
 nav {
   display: flex;
-  justify-content: space-between; /* Space between nav items */
+  justify-content: space-between;
   padding: 10px 10%;
 }
 
 nav ul {
   display: flex;
-  min-width: 35vw;
   justify-content: space-around;
+  min-width: 35vw;
   list-style: none;
 }
 
 nav ul li a {
-  text-decoration: none; /* Remove underline */
+  text-decoration: none;
   color: #169976;
-  transition: color 0.3s ease; /* Smooth color transition */
+  transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-  border-radius: 3px;
   text-decoration: underline;
-  color: #1dcd9f; /* Hover color */
+  color: #1dcd9f;
 }
 
 /* ---------------------------------------
@@ -84,10 +57,6 @@ nav ul li a:hover {
 
 .download-btn:hover {
   background-color: #1dcd9f;
-
-  a {
-    color: crimson;
-  }
 }
 
 .download-btn a {
@@ -96,16 +65,18 @@ nav ul li a:hover {
 }
 
 /* ---------------------------------------
-   Main Content Container
+   Hero Section
 ---------------------------------------- */
-.container {
-  display: flex;
-  justify-content: space-between; /* Text and image side by side */
+#home-section {
+  padding: 0 10%;
 }
 
-/* ---------------------------------------
-   Left Text Content
----------------------------------------- */
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .containt {
   margin-top: 5%;
   max-width: 45vw;
@@ -116,45 +87,43 @@ nav ul li a:hover {
   margin-bottom: 30px;
 }
 
-.name {
-  font-size: 9vw; /* Large name */
+.name,
+.titel {
+  font-size: 9vw;
 }
 
 .titel {
-  font-size: 9vw;
-  margin-left: 10rem; /* Indentation for design */
+  margin-left: 10rem;
 }
 
 .containt p {
-  margin: 0px 0 30px 0;
+  margin-bottom: 30px;
 }
 
-/* Typing effect text */
 #element {
   color: crimson;
 }
 
-/* Social Media Icons */
+/* Social Icons */
 .social_icon {
-  width: auto;
   display: flex;
   align-items: center;
 }
 
 .social_icon a {
-  background-color: transparent;
   height: 40px;
   width: 40px;
-  border-radius: 50%;
-  font-size: 1.5rem;
   margin-right: 2rem;
+  font-size: 1.5rem;
   color: black;
-  transition: color 0.2s ease, box-shadow 0.4s ease;
+  background-color: transparent;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 0 6px 4px #169976;
+  transition: color 0.2s ease, box-shadow 0.4s ease;
   text-decoration: none;
-  box-shadow: 0 0 6px 4px #169976; /* Glowing border */
 }
 
 .social_icon a:hover {
@@ -162,9 +131,7 @@ nav ul li a:hover {
   box-shadow: 0 0 6px 4px #1dcd9f;
 }
 
-/* ---------------------------------------
-   Right Profile Image
----------------------------------------- */
+/* Profile Image */
 .image {
   max-width: 45vw;
   padding-top: 20px;
@@ -172,7 +139,6 @@ nav ul li a:hover {
 
 .image img {
   height: 600px;
-  /* filter: drop-shadow(0 0 10px #169976) drop-shadow(0 0 20px #169976); */
   animation: glowPulse 1s infinite alternate;
 }
 
@@ -184,52 +150,42 @@ nav ul li a:hover {
     filter: drop-shadow(0 0 20px #1dcd9f) drop-shadow(0 0 20px #1dcd9f);
   }
 }
+
 /* ---------------------------------------
    About Section
 ---------------------------------------- */
 .about-section {
   height: 100vh;
+  min-height: 500px;
   width: auto;
 }
+
 .about-section h3 {
   font-size: 50px;
   text-align: center;
   padding: 50px 0;
 }
 
-/* Layout for About + Education side-by-side */
 .about-container {
   padding: 20px;
-  width: 100vw;
-  overflow: hidden;
   display: flex;
   justify-content: space-around;
-  /* align-items: center; */
+  flex-wrap: wrap;
+  width: 100%;
 }
 
-/* About Text */
-.about {
-  width: 45%;
-  padding: 20px;
-  text-align: justify;
-  border-radius: 20px;
-  line-height: 28px;
-  font-size: 1.1rem;
-  box-shadow: 0 2px 6px 0 rgb(29, 205, 159);
-}
-
-/* Education Container */
-.education {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
+.about,
 .edu-container {
   width: 45%;
-  padding: 30px;
+  padding: 20px;
   border-radius: 20px;
   box-shadow: 0 2px 6px rgb(29, 205, 159);
+  font-size: 1.1rem;
+}
+
+.about {
+  text-align: justify;
+  line-height: 28px;
 }
 
 .edu-container h4 {
@@ -238,15 +194,14 @@ nav ul li a:hover {
   margin-bottom: 10px;
 }
 
-/* Education List Styling */
 .education {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  align-items: center;
 }
 
 .edu-item {
-  height: auto;
   width: 100%;
   padding: 10px;
   border-radius: 10px;
@@ -260,7 +215,6 @@ nav ul li a:hover {
 }
 
 .edu-item p {
-  margin: 4px 0;
   color: #555;
 }
 
@@ -273,29 +227,28 @@ nav ul li a:hover {
 ---------------------------------------- */
 .skillSection {
   height: 100vh;
-  width: auto;
-  overflow-x: hidden; /* prevent horizontal scroll */
+  min-height: 500px;
+  overflow-x: hidden;
   position: relative;
 }
+
 .skillSection h3 {
   text-align: center;
   font-size: 50px;
   padding: 30px 0 20px 0;
 }
+
 .skillContainer {
   display: flex;
-  align-items: center;
-  height: 10%;
+  height: 80%;
   width: 100%;
   overflow: hidden;
 }
 
 .skillbox {
   display: flex;
-
   align-items: center;
   width: max-content;
-  /* animation: scrollSkills 40s linear infinite; */
 }
 
 .skills {
@@ -305,8 +258,6 @@ nav ul li a:hover {
 .skills ul {
   display: flex;
   gap: 40px;
-  padding: 0;
-  margin: 0;
   list-style: none;
 }
 
@@ -323,35 +274,28 @@ nav ul li a:hover {
 }
 
 /* ---------------------------------------
-   Scrolling Animations
----------------------------------------- */
-
-/* ---------------------------------------
    Project Section
 ---------------------------------------- */
 .project-section {
-  position: relative;
   height: 100vh;
   overflow: hidden;
-  padding: 50px 0;
 }
 
 .project-section h2 {
   text-align: center;
   font-size: 50px;
-  padding: 50px 0 50px 0;
+  padding: 50px 0;
 }
 
 .project_wrapper {
   height: 100%;
-  overflow: hidden;
 }
 
 .project_container {
   display: flex;
   padding-left: 10rem;
   height: 80vh;
-  width: max-content; /* Ensures full width of all items */
+  width: max-content;
 }
 
 .project-box {
@@ -359,11 +303,11 @@ nav ul li a:hover {
   height: 50vh;
   width: 40vw;
   flex-shrink: 0;
-  border-radius: 30px;
   margin: 0 15px;
+  border-radius: 30px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   background-color: #1dcd9f;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   transition: transform 0.3s ease-in-out;
 }
 
@@ -388,7 +332,7 @@ nav ul li a:hover {
 }
 
 .project_layar h4 {
-  margin: 0 0 10px;
+  margin-bottom: 10px;
 }
 
 .project_layar a {
@@ -396,4 +340,83 @@ nav ul li a:hover {
   text-decoration: none;
 }
 
-/*contact*/
+/* ---------------------------------------
+   Responsive Design
+---------------------------------------- */
+@media (max-width: 1024px) {
+  .containt,
+  .image {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .titel {
+    margin-left: 0;
+  }
+
+  .about,
+  .edu-container {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+
+  .project_container {
+    padding-left: 0;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+
+  .project-box {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .name,
+  .titel {
+    font-size: 12vw;
+  }
+
+  .skillContainer {
+    flex-direction: column;
+  }
+
+  .skills ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .containt {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .image img {
+    height: auto;
+    width: 100%;
+  }
+
+  .project-box {
+    width: 90vw;
+  }
+
+  .about-section h3,
+  .skillSection h3,
+  .project-section h2 {
+    font-size: 36px;
+  }
+}

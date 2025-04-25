@@ -184,21 +184,6 @@ gsap.to(".skill_2", {
   repeat: -1,
 });
 
-// Right to left scroll
-gsap.to(".skill2_1", {
-  xPercent: -100,
-  ease: "linear",
-  duration: 20,
-  repeat: -1,
-});
-
-gsap.to(".skill2_2", {
-  xPercent: -100,
-  ease: "linear",
-  duration: 20,
-  repeat: -1,
-});
-
 gsap.from(".project-section h2", {
   scale: 0,
   opacity: 0,
