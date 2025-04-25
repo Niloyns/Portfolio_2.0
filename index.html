@@ -291,9 +291,71 @@
         </section>
 
         <!-- Contact Section (optional placeholder) -->
-        <section class="section" id="contact-section">
-          <h2>Contact</h2>
-          <p>You can add a contact form or email/social links here.</p>
+        <section id="contact">
+          <h1 class="section-heading">
+            <span id="Contact"> Contact </span>
+          </h1>
+          <div id="contact-container">
+            <!-- Contact Form -->
+            <div id="contact-form-container">
+              <form
+                action="https://formspree.io/f/xvgzqkov"
+                method="POST"
+                id="contact-form"
+              >
+                <input
+                  id="input-name"
+                  name="name"
+                  type="text"
+                  required
+                  placeholder="Your Name"
+                />
+                <input
+                  id="input-email"
+                  name="email"
+                  type="email"
+                  required
+                  placeholder="Your Email"
+                />
+                <textarea
+                  id="input-message"
+                  name="message"
+                  rows="2"
+                  cols="40"
+                  placeholder="Message"
+                ></textarea>
+                <button class="sub-btn" type="submit">SEND MESSAGE</button>
+              </form>
+            </div>
+
+            <!-- Contact Details -->
+            <div id="my-details-container">
+              <h3>Get In Touch</h3>
+              <p>
+                Hi, I'm Niloy Sarkar, a Full Stack Web Developer and Software
+                Developer. I'm currently open to new opportunities and eager to
+                contribute my skills and expertise to your company. My
+                background includes experience with a range of technologies and
+                a passion for delivering high-quality solutions. I look forward
+                to the possibility of collaborating and making a positive
+                impact.
+              </p>
+
+              <h3>My Address</h3>
+              <div class="my-details-info-container">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Kolkata, India 700030</span>
+              </div>
+              <div class="my-details-info-container">
+                <i class="fas fa-mobile-alt"></i>
+                <span>+91 8759581274</span>
+              </div>
+              <div class="my-details-info-container">
+                <i class="far fa-envelope"></i>
+                <span>niloysarkar1998@gmail.com</span>
+              </div>
+            </div>
+          </div>
         </section>
       </main>
     </div>
