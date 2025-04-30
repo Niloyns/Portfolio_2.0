@@ -200,14 +200,15 @@ gsap.registerPlugin(ScrollTrigger);
 const container = document.querySelector(".project_container");
 
 gsap.to(container, {
-  x: () => -(container.scrollWidth - window.innerWidth), // key part
+  x: () => -(container.scrollWidth - window.innerWidth),
   ease: "none",
   scrollTrigger: {
     trigger: ".project-section",
     start: "top top",
     end: () => "+=" + (container.scrollWidth - window.innerWidth),
-    scrub: 1,
+    scrub: true,
     pin: true,
     anticipatePin: 1,
+    invalidateOnRefresh: true, // important to avoid white space on resize
   },
 });
