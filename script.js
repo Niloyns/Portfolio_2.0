@@ -120,6 +120,18 @@ gsap
 // =====================
 // ABOUT SECTION ANIMATION
 // =====================
+gsap.from(".about-title", {
+  scale: 0,
+  opacity: 0,
+  duration: 1.1,
+  scrollTrigger: {
+    trigger: ".about-title",
+    start: "top 90%",
+    end: "top 60%",
+    scrub: 1,
+  },
+});
+
 gsap.from(".about-card", {
   y: 100,
   opacity: 0,
@@ -187,7 +199,7 @@ gsap.to(".skill_2", {
 });
 
 gsap.from(".fixedSkill_1 ul i", {
-  scale: 0,
+  scale: 0.5,
   opacity: 0,
   y: 40,
   duration: 0.7,
@@ -198,6 +210,7 @@ gsap.from(".fixedSkill_1 ul i", {
     start: "top 95%",
     end: "top 60%",
     scrub: 3,
+    invalidateOnRefresh: true,
   },
 });
 
@@ -283,3 +296,47 @@ gsap.from(".contact-input", {
     scrub: 1,
   },
 });
+
+// =====================
+// HAMBURGER MENU TOGGLE
+// =====================
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+const navBackdrop = document.querySelector(".nav-backdrop");
+
+function toggleMenu() {
+  hamburger.classList.toggle("active");
+  navLinks.classList.toggle("open");
+  if (navLinks.classList.contains("open")) {
+    gsap.fromTo(
+      navLinks,
+      { opacity: 0, y: -30 },
+      { opacity: 1, y: 0, duration: 0.4, ease: "power2.out" }
+    );
+    navBackdrop.classList.add("active");
+    document.body.classList.add("menu-open");
+  } else {
+    navBackdrop.classList.remove("active");
+    document.body.classList.remove("menu-open");
+  }
+}
+
+if (hamburger && navLinks && navBackdrop) {
+  hamburger.addEventListener("click", toggleMenu);
+  hamburger.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " ") {
+      toggleMenu();
+    }
+  });
+  navBackdrop.addEventListener("click", toggleMenu);
+  navLinks.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      if (window.innerWidth <= 900) {
+        hamburger.classList.remove("active");
+        navLinks.classList.remove("open");
+        navBackdrop.classList.remove("active");
+        document.body.classList.remove("menu-open");
+      }
+    });
+  });
+}

@@ -43,7 +43,12 @@
       <header>
         <nav>
           <h2>Portfolio</h2>
-          <ul>
+          <div class="hamburger" aria-label="Open navigation" tabindex="0">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul class="nav-links">
             <li><a href="#home-section">Home</a></li>
             <li><a href="#about-section">About</a></li>
             <li><a href="#skills-section">Skills</a></li>
@@ -51,567 +56,706 @@
             <li><a href="#contact">Contact</a></li>
           </ul>
           <div class="download-btn">
-            <a href="./document/NiloyResume_9.pdf" target="_blank">Download</a>
+            <a href="./document/NiloyResume_11.1.pdf" target="_blank"
+              >Download</a
+            >
           </div>
         </nav>
-      </header>
+        <div class="nav-backdrop"></div>
+        <div class="main-content">
+          <main>
+            <!-- Hero Section -->
+            <section class="section" id="home-section">
+              <div class="container">
+                <div class="containt">
+                  <h1>
+                    <div class="name">Niloy</div>
+                    <div class="titel">Sarkar</div>
+                  </h1>
 
-      <main>
-        <!-- Hero Section -->
-        <section class="section" id="home-section">
-          <div class="container">
-            <div class="containt">
-              <h1>
-                <div class="name">Niloy</div>
-                <div class="titel">Sarkar</div>
+                  <!-- Typing Effect -->
+                  <p class="typed_skill">
+                    <strong>I am a <span id="element"></span></strong>
+                  </p>
+
+                  <!-- Summary -->
+                  <p class="sumary">
+                    Experienced Full Stack Developer with expertise in Java,
+                    Python, JavaScript, and modern web frameworks, building
+                    scalable applications. Proficient in database management
+                    (MongoDB, SQL) and DevOps tools (Git, Docker), focused on
+                    delivering clean, efficient code.
+                  </p>
+
+                  <!-- Social Links -->
+                  <div class="social_icon">
+                    <a href="https://github.com/Niloyns" target="_blank"
+                      ><i class="fa-brands fa-github"></i
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/in/niloy-ns/"
+                      target="_blank"
+                      ><i class="fa-brands fa-linkedin"></i
+                    ></a>
+                    <a href="https://www.instagram.com/niloyns/" target="_blank"
+                      ><i class="fa-brands fa-instagram"></i
+                    ></a>
+                    <a href="YOUR_FACEBOOK_URL" target="_blank"
+                      ><i class="fa-brands fa-square-facebook"></i
+                    ></a>
+                    <a href="https://x.com/niloysarkarNS" target="_blank"
+                      ><i class="fa-brands fa-square-x-twitter"></i
+                    ></a>
+                  </div>
+                </div>
+
+                <!-- Profile Image -->
+                <div class="image">
+                  <img
+                    src="./images/profilePhoto.png"
+                    loading="lazy"
+                    alt="Profile Photo"
+                    class=".glow-image"
+                  />
+                </div>
+              </div>
+            </section>
+
+            <!-- About Section -->
+            <section class="section about-section" id="about-section">
+              <h3 class="about-title">About Me</h3>
+              <div class="about-card">
+                <div class="about-content">
+                  <p class="about-text">
+                    <span class="about-highlight"
+                      >Full Stack Web Developer</span
+                    >
+                    & Software Engineer with experience in
+                    <span class="spancolor">Java</span>,
+                    <span class="spancolor">Python</span>,
+                    <span class="spancolor">JavaScript</span>,
+                    <span class="spancolor">Node.js</span>,
+                    <span class="spancolor">React</span>,
+                    <span class="spancolor">MongoDB</span>,
+                    <span class="spancolor">SQL</span>, and more. Passionate
+                    about building scalable, user-centric solutions and staying
+                    ahead with modern tech trends. <br /><br />
+                    <span class="about-highlight">Strengths:</span>
+                    Problem-solving, clean code, teamwork, and continuous
+                    learning.
+                  </p>
+                </div>
+                <div class="about-edu">
+                  <h4>Education</h4>
+                  <div class="education">
+                    <div class="edu-item">
+                      <h4>Diploma in Computer Science and Technology</h4>
+                      <p>
+                        <strong>Institute:</strong> Regent Institute Of Science
+                        And Technology
+                      </p>
+                      <p><strong>Year:</strong> 2018 - 2020</p>
+                      <p><strong>Grade:</strong> 7.6 CGPA</p>
+                    </div>
+                    <div class="edu-item">
+                      <h4>
+                        Bachelor of Technology in Computer Science and
+                        Engineering (CSE)
+                      </h4>
+                      <p>
+                        <strong>College:</strong> Murshidabad College of
+                        Engineering & Technology
+                      </p>
+                      <p><strong>Year:</strong> 2020 - 2023</p>
+                      <p><strong>Grade:</strong> 8.45 CGPA</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section class="skillSection section" id="skills-section">
+              <h3>Skills</h3>
+              <div class="skill-center">
+                <div class="skillContainer">
+                  <div class="skillbox">
+                    <div class="skills skill_1">
+                      <ul>
+                        <li><i class="fab fa-html5" title="HTML5"></i></li>
+                        <li><i class="fab fa-css3-alt" title="CSS3"></i></li>
+                        <li><i class="fab fa-sass" title="Sass"></i></li>
+                        <li>
+                          <i class="fab fa-bootstrap" title="Bootstrap"></i>
+                        </li>
+                        <li><i class="fab fa-js" title="JavaScript"></i></li>
+                        <li><i class="fab fa-java" title="Java"></i></li>
+                        <li><i class="fab fa-python" title="Python"></i></li>
+                        <li><i class="fab fa-node-js" title="Node.js"></i></li>
+                        <li>
+                          <i class="fas fa-server" title="Express.js"></i>
+                        </li>
+                        <li>
+                          <i class="fas fa-database" title="MongoDB / SQL"></i>
+                        </li>
+                        <li><i class="fab fa-docker" title="Docker"></i></li>
+                        <li><i class="fab fa-git-alt" title="Git"></i></li>
+                        <li><i class="fab fa-github" title="GitHub"></i></li>
+                        <li>
+                          <i class="fab fa-wordpress" title="WordPress"></i>
+                        </li>
+                        <li><i class="fas fa-code" title="EJS"></i></li>
+                        <li><i class="fab fa-react" title="React.js"></i></li>
+                        <li><i class="fas fa-key" title="JWT"></i></li>
+                        <li>
+                          <i class="fas fa-user-lock" title="Passport.js"></i>
+                        </li>
+                        <li><i class="fab fa-npm" title="npm"></i></li>
+                      </ul>
+                    </div>
+
+                    <div class="skills skill_2">
+                      <!-- duplicate list for infinite effect -->
+                      <ul>
+                        <li><i class="fab fa-html5" title="HTML5"></i></li>
+                        <li><i class="fab fa-css3-alt" title="CSS3"></i></li>
+                        <li><i class="fab fa-sass" title="Sass"></i></li>
+                        <li>
+                          <i class="fab fa-bootstrap" title="Bootstrap"></i>
+                        </li>
+                        <li><i class="fab fa-js" title="JavaScript"></i></li>
+                        <li><i class="fab fa-java" title="Java"></i></li>
+                        <li><i class="fab fa-python" title="Python"></i></li>
+                        <li><i class="fab fa-node-js" title="Node.js"></i></li>
+                        <li>
+                          <i class="fas fa-server" title="Express.js"></i>
+                        </li>
+                        <li>
+                          <i class="fas fa-database" title="MongoDB / SQL"></i>
+                        </li>
+                        <li><i class="fab fa-docker" title="Docker"></i></li>
+                        <li><i class="fab fa-git-alt" title="Git"></i></li>
+                        <li><i class="fab fa-github" title="GitHub"></i></li>
+                        <li>
+                          <i class="fab fa-wordpress" title="WordPress"></i>
+                        </li>
+                        <li><i class="fas fa-code" title="EJS"></i></li>
+                        <li><i class="fab fa-react" title="React.js"></i></li>
+                        <li><i class="fas fa-key" title="JWT"></i></li>
+                        <li>
+                          <i class="fas fa-user-lock" title="Passport.js"></i>
+                        </li>
+                        <li><i class="fab fa-npm" title="npm"></i></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="skillContainer-text">
+                  <div class="skillbox-text">
+                    <div class="skills-text1">
+                      <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Sass</li>
+                        <li>Bootstrap</li>
+                        <li>JavaScript</li>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>MongoDB / SQL</li>
+                        <li>Docker</li>
+                        <li>Git</li>
+                        <li>GitHub</li>
+                        <li>WordPress</li>
+                        <li>EJS</li>
+                        <li>React.js</li>
+                        <li>JWT</li>
+                        <li>Passport.js</li>
+                        <li>npm</li>
+                      </ul>
+                    </div>
+
+                    <div class="skills-text2">
+                      <!-- duplicate list for infinite effect -->
+                      <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Sass</li>
+                        <li>Bootstrap</li>
+                        <li>JavaScript</li>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>MongoDB / SQL</li>
+                        <li>Docker</li>
+                        <li>Git</li>
+                        <li>GitHub</li>
+                        <li>WordPress</li>
+                        <li>EJS</li>
+                        <li>React.js</li>
+                        <li>JWT</li>
+                        <li>Passport.js</li>
+                        <li>npm</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="skillContainer2">
+                  <div class="skillbox2">
+                    <div class="skills fixedSkill_1">
+                      <ul>
+                        <li><i class="fab fa-html5" title="HTML5"></i></li>
+                        <li><i class="fab fa-css3-alt" title="CSS3"></i></li>
+                        <li><i class="fab fa-sass" title="Sass"></i></li>
+                        <li>
+                          <i class="fab fa-bootstrap" title="Bootstrap"></i>
+                        </li>
+                        <li><i class="fab fa-js" title="JavaScript"></i></li>
+                        <li><i class="fab fa-java" title="Java"></i></li>
+                        <li><i class="fab fa-python" title="Python"></i></li>
+                        <li><i class="fab fa-node-js" title="Node.js"></i></li>
+                        <li>
+                          <i class="fas fa-server" title="Express.js"></i>
+                        </li>
+                        <li>
+                          <i class="fas fa-database" title="MongoDB / SQL"></i>
+                        </li>
+                        <li><i class="fab fa-docker" title="Docker"></i></li>
+                        <li><i class="fab fa-git-alt" title="Git"></i></li>
+                        <li><i class="fab fa-github" title="GitHub"></i></li>
+                        <li>
+                          <i class="fab fa-wordpress" title="WordPress"></i>
+                        </li>
+                        <li><i class="fas fa-code" title="EJS"></i></li>
+                        <li><i class="fab fa-react" title="React.js"></i></li>
+                        <li><i class="fas fa-key" title="JWT"></i></li>
+                        <li>
+                          <i class="fas fa-user-lock" title="Passport.js"></i>
+                        </li>
+                        <li><i class="fab fa-npm" title="npm"></i></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="skillContainer2-text">
+                  <div class="fixedSkill">
+                    <div class="fixedSkills-text1">
+                      <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Sass</li>
+                        <li>Bootstrap</li>
+                        <li>JavaScript</li>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>MongoDB / SQL</li>
+                        <li>Docker</li>
+                        <li>Git</li>
+                        <li>GitHub</li>
+                        <li>WordPress</li>
+                        <li>EJS</li>
+                        <li>React.js</li>
+                        <li>JWT</li>
+                        <li>Passport.js</li>
+                        <li>npm</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section class="section project-section" id="project-section">
+              <h2>Projects</h2>
+              <div class="project_wrapper">
+                <div class="project_container">
+                  <!-- Project Card: Portfolio -->
+                  <div class="project-box">
+                    <img
+                      src="./images/Project_img/Portfolio.png"
+                      alt="Screenshot of Portfolio Website"
+                    />
+                    <div class="project_layar">
+                      <h4>Portfolio</h4>
+                      <p>
+                        This is my personal developer portfolio website built
+                        using HTML, CSS, and JavaScript. It showcases my
+                        projects, skills, and contact information in a clean,
+                        modern, and interactive design.
+                      </p>
+                      <div class="project-buttons">
+                        <a
+                          href="https://niloyns.github.io/Portfolio_2.0/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="view-btn"
+                          >View</a
+                        >
+                        <a
+                          href="https://github.com/Niloyns/Portfolio_2.0"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >View Code</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Project Card: Transaction Tracker -->
+                  <div class="project-box">
+                    <img
+                      src="./images/Project_img/Transaction_Tracker.png"
+                      alt="Screenshot of Transaction Tracker App"
+                    />
+                    <div class="project_layar">
+                      <h4>Transaction-Tracker</h4>
+                      <p>
+                        A simple and interactive finance tracking application
+                        built with Node.js, Express, MongoDB, and EJS that
+                        allows users to add, view, and delete transactions in
+                        real-time with dynamic total balance updates.
+                      </p>
+                      <div class="project-buttons">
+                        <a
+                          href="https://transaction-tracker-libo.onrender.com/admin"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="view-btn"
+                          >View</a
+                        >
+                        <a
+                          href="https://github.com/Niloyns/Transaction-Tracker"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >View Code</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Project Card: Myntra Clone -->
+                  <div class="project-box">
+                    <img
+                      src="./images/Project_img/Myntra.png"
+                      alt="Screenshot of Myntra Clone Website"
+                    />
+                    <div class="project_layar">
+                      <h4>MyntraClone</h4>
+                      <p>
+                        A fully responsive clone of Myntra's website designed
+                        using HTML, CSS, and JavaScript. This project replicates
+                        the look and feel of Myntra's homepage and includes
+                        various UI/UX elements such as a header, navigation bar,
+                        search bar, banners, and footer sections with promises.
+                      </p>
+                      <div class="project-buttons">
+                        <a
+                          href="https://niloyns.github.io/MyntraClone/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="view-btn"
+                          >View</a
+                        >
+                        <a
+                          href="https://github.com/Niloyns/MyntraClone"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >View Code</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Project Card: Calculator -->
+                  <div class="project-box">
+                    <img
+                      src="./images/Project_img/Calculator.png"
+                      alt="Screenshot of Calculator App"
+                    />
+                    <div class="project_layar">
+                      <h4>Calculator</h4>
+                      <p>
+                        A simple calculator web app for basic arithmetic
+                        operations, designed with a clean and intuitive
+                        interface using HTML, CSS, and JavaScript.
+                      </p>
+                      <div class="project-buttons">
+                        <a
+                          href="https://niloyns.github.io/Calculator/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="view-btn"
+                          >View</a
+                        >
+                        <a
+                          href="https://github.com/Niloyns/Calculator"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >View Code</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Project Card: Alarm Clock -->
+                  <div class="project-box">
+                    <img
+                      src="./images/Project_img/Alarm-Clock.png"
+                      alt="Screenshot of Alarm Clock App"
+                    />
+                    <div class="project_layar">
+                      <h4>Alarm Clock</h4>
+                      <p>
+                        A digital alarm clock application that allows users to
+                        set, edit, and delete alarms. Built with JavaScript for
+                        real-time updates and notifications.
+                      </p>
+                      <div class="project-buttons">
+                        <a
+                          href="https://niloyns.github.io/AlarmClock/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="view-btn"
+                          >View</a
+                        >
+                        <a
+                          href="https://github.com/Niloyns/AlarmClock"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >View Code</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Project Card: IMDB Clone -->
+                  <div class="project-box">
+                    <img
+                      src="./images/Project_img/IMDB-Clone.png"
+                      alt="Screenshot of IMDB Clone Website"
+                    />
+                    <div class="project_layar">
+                      <h4>IMDB Clone</h4>
+                      <p>
+                        A clone of the IMDB website featuring movie listings,
+                        search, and details. Developed using HTML, CSS, and
+                        JavaScript for a dynamic user experience.
+                      </p>
+                      <div class="project-buttons">
+                        <a
+                          href="https://niloyns.github.io/IMDB-Clone-project/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="view-btn"
+                          >View</a
+                        >
+                        <a
+                          href="https://github.com/Niloyns/IMDB-Clone-project"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >View Code</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Project Card: Tic-tac-Toe -->
+                  <div class="project-box">
+                    <img
+                      src="./images/Project_img/Tic-tac-Toe.png"
+                      alt="Screenshot of Tic-tac-Toe Game"
+                    />
+                    <div class="project_layar">
+                      <h4>Tic-tac-Toe</h4>
+                      <p>
+                        A classic Tic-tac-Toe game for two players, built with
+                        HTML, CSS, and JavaScript. Features a responsive design
+                        and interactive gameplay.
+                      </p>
+                      <div class="project-buttons">
+                        <a
+                          href="https://niloyns.github.io/Tic-Tac-Toe/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="view-btn"
+                          >View</a
+                        >
+                        <a
+                          href="https://github.com/Niloyns/Tic-Tac-Toe"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >View Code</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Project Card: Portfolio2 -->
+                  <div class="project-box">
+                    <img
+                      src="./images/Project_img/Portfolio2.png"
+                      alt="Screenshot of Portfolio2 Website"
+                    />
+                    <div class="project_layar">
+                      <h4>Portfolio2</h4>
+                      <p>
+                        An updated version of my personal portfolio, showcasing
+                        advanced design and animation techniques using modern
+                        web technologies.
+                      </p>
+                      <div class="project-buttons">
+                        <a
+                          href="https://niloyns.github.io/niloyPortfolio/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="view-btn"
+                          >View</a
+                        >
+                        <a
+                          href="https://github.com/Niloyns/niloyPortfolio"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >View Code</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Project Card: Jobsitehub -->
+                  <div class="project-box">
+                    <img
+                      src="./images/Project_img/Jobsitehub.png"
+                      alt="Screenshot of Jobsitehub Website"
+                    />
+                    <div class="project_layar">
+                      <h4>Jobsitehub</h4>
+                      <p>
+                        JobSiteHub is a productivity web app that allows job
+                        seekers to open multiple Indian job portals with a
+                        single click and optionally close them all together
+                      </p>
+                      <div class="project-buttons">
+                        <a
+                          href="https://niloyns.github.io/JobSiteHub/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="view-btn"
+                          >View</a
+                        >
+                        <a
+                          href="https://github.com/Niloyns/JobSiteHub"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >View Code</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Project Card: Todo API -->
+                  <div class="project-box">
+                    <img
+                      src="./images/Project_img/Todo_API.jpg"
+                      alt="Screenshot of Todo API Project"
+                    />
+                    <div class="project_layar">
+                      <h4>Todo API</h4>
+                      <p>
+                        A RESTful API for managing todo lists, built with
+                        Node.js and Express. Supports CRUD operations and
+                        integrates with a MongoDB database.
+                      </p>
+                      <div class="project-buttons">
+                        <a
+                          href="https://todo-api-sb40.onrender.com/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="view-btn"
+                          >View</a
+                        >
+                        <a
+                          href="https://github.com/Niloyns/Todo_API"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >View Code</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Contact Section (animated) -->
+            <section id="contact" class="contact">
+              <h1 class="section-heading contact-title">
+                <span id="Contact"> Contact </span>
               </h1>
-
-              <!-- Typing Effect -->
-              <p class="typed_skill">
-                <strong>I am a <span id="element"></span></strong>
-              </p>
-
-              <!-- Summary -->
-              <p class="sumary">
-                Experienced Full Stack Developer with expertise in Java, Python,
-                JavaScript, and modern web frameworks, building scalable
-                applications. Proficient in database management (MongoDB, SQL)
-                and DevOps tools (Git, Docker), focused on delivering clean,
-                efficient code.
-              </p>
-
-              <!-- Social Links -->
-              <div class="social_icon">
-                <a href="https://github.com/Niloyns" target="_blank"
-                  ><i class="fa-brands fa-github"></i
-                ></a>
-                <a href="https://www.linkedin.com/in/niloy-ns/" target="_blank"
-                  ><i class="fa-brands fa-linkedin"></i
-                ></a>
-                <a href="https://www.instagram.com/niloyns/" target="_blank"
-                  ><i class="fa-brands fa-instagram"></i
-                ></a>
-                <a href="YOUR_FACEBOOK_URL" target="_blank"
-                  ><i class="fa-brands fa-square-facebook"></i
-                ></a>
-                <a href="https://x.com/niloysarkarNS" target="_blank"
-                  ><i class="fa-brands fa-square-x-twitter"></i
-                ></a>
-              </div>
-            </div>
-
-            <!-- Profile Image -->
-            <div class="image">
-              <img
-                src="./images/profilePhoto.png"
-                loading="lazy"
-                alt="Profile Photo"
-                class=".glow-image"
-              />
-            </div>
-          </div>
-        </section>
-
-        <!-- About Section -->
-        <section class="section about-section" id="about-section">
-          <h3 class="about-title">About Me</h3>
-          <div class="about-card">
-            <div class="about-content">
-              <p class="about-text">
-                <span class="about-highlight">Full Stack Web Developer</span> &
-                Software Engineer with experience in
-                <span class="spancolor">Java</span>,
-                <span class="spancolor">Python</span>,
-                <span class="spancolor">JavaScript</span>,
-                <span class="spancolor">Node.js</span>,
-                <span class="spancolor">React</span>,
-                <span class="spancolor">MongoDB</span>,
-                <span class="spancolor">SQL</span>, and more. Passionate about
-                building scalable, user-centric solutions and staying ahead with
-                modern tech trends. <br /><br />
-                <span class="about-highlight">Strengths:</span> Problem-solving,
-                clean code, teamwork, and continuous learning.
-              </p>
-            </div>
-            <div class="about-edu">
-              <h4>Education</h4>
-              <div class="education">
-                <div class="edu-item">
-                  <h4>Diploma in Computer Science and Technology</h4>
-                  <p>
-                    <strong>Institute:</strong> Regent Institute Of Science And
-                    Technology
-                  </p>
-                  <p><strong>Year:</strong> 2018 - 2020</p>
-                  <p><strong>Grade:</strong> 7.6 CGPA</p>
-                </div>
-                <div class="edu-item">
-                  <h4>
-                    Bachelor of Technology in Computer Science and Engineering
-                    (CSE)
-                  </h4>
-                  <p>
-                    <strong>College:</strong> Murshidabad College of Engineering
-                    & Technology
-                  </p>
-                  <p><strong>Year:</strong> 2020 - 2023</p>
-                  <p><strong>Grade:</strong> 8.45 CGPA</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section class="skillSection section" id="skills-section">
-          <h3>Skills</h3>
-          <div class="skill-center">
-            <div class="skillContainer">
-              <div class="skillbox">
-                <div class="skills skill_1">
-                  <ul>
-                    <li><i class="fab fa-html5" title="HTML5"></i></li>
-                    <li><i class="fab fa-css3-alt" title="CSS3"></i></li>
-                    <li><i class="fab fa-sass" title="Sass"></i></li>
-                    <li><i class="fab fa-bootstrap" title="Bootstrap"></i></li>
-                    <li><i class="fab fa-js" title="JavaScript"></i></li>
-                    <li><i class="fab fa-java" title="Java"></i></li>
-                    <li><i class="fab fa-python" title="Python"></i></li>
-                    <li><i class="fab fa-node-js" title="Node.js"></i></li>
-                    <li><i class="fas fa-server" title="Express.js"></i></li>
-                    <li>
-                      <i class="fas fa-database" title="MongoDB / SQL"></i>
-                    </li>
-                    <li><i class="fab fa-docker" title="Docker"></i></li>
-                    <li><i class="fab fa-git-alt" title="Git"></i></li>
-                    <li><i class="fab fa-github" title="GitHub"></i></li>
-                    <li><i class="fab fa-wordpress" title="WordPress"></i></li>
-                    <li><i class="fas fa-code" title="EJS"></i></li>
-                    <li><i class="fab fa-react" title="React.js"></i></li>
-                    <li><i class="fas fa-key" title="JWT"></i></li>
-                    <li>
-                      <i class="fas fa-user-lock" title="Passport.js"></i>
-                    </li>
-                    <li><i class="fab fa-npm" title="npm"></i></li>
-                  </ul>
-                </div>
-
-                <div class="skills skill_2">
-                  <!-- duplicate list for infinite effect -->
-                  <ul>
-                    <li><i class="fab fa-html5" title="HTML5"></i></li>
-                    <li><i class="fab fa-css3-alt" title="CSS3"></i></li>
-                    <li><i class="fab fa-sass" title="Sass"></i></li>
-                    <li><i class="fab fa-bootstrap" title="Bootstrap"></i></li>
-                    <li><i class="fab fa-js" title="JavaScript"></i></li>
-                    <li><i class="fab fa-java" title="Java"></i></li>
-                    <li><i class="fab fa-python" title="Python"></i></li>
-                    <li><i class="fab fa-node-js" title="Node.js"></i></li>
-                    <li><i class="fas fa-server" title="Express.js"></i></li>
-                    <li>
-                      <i class="fas fa-database" title="MongoDB / SQL"></i>
-                    </li>
-                    <li><i class="fab fa-docker" title="Docker"></i></li>
-                    <li><i class="fab fa-git-alt" title="Git"></i></li>
-                    <li><i class="fab fa-github" title="GitHub"></i></li>
-                    <li><i class="fab fa-wordpress" title="WordPress"></i></li>
-                    <li><i class="fas fa-code" title="EJS"></i></li>
-                    <li><i class="fab fa-react" title="React.js"></i></li>
-                    <li><i class="fas fa-key" title="JWT"></i></li>
-                    <li>
-                      <i class="fas fa-user-lock" title="Passport.js"></i>
-                    </li>
-                    <li><i class="fab fa-npm" title="npm"></i></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="skillContainer-text">
-              <div class="skillbox-text">
-                <div class="skills-text1">
-                  <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>Sass</li>
-                    <li>Bootstrap</li>
-                    <li>JavaScript</li>
-                    <li>Java</li>
-                    <li>Python</li>
-                    <li>Node.js</li>
-                    <li>Express.js</li>
-                    <li>MongoDB / SQL</li>
-                    <li>Docker</li>
-                    <li>Git</li>
-                    <li>GitHub</li>
-                    <li>WordPress</li>
-                    <li>EJS</li>
-                    <li>React.js</li>
-                    <li>JWT</li>
-                    <li>Passport.js</li>
-                    <li>npm</li>
-                  </ul>
-                </div>
-
-                <div class="skills-text2">
-                  <!-- duplicate list for infinite effect -->
-                  <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>Sass</li>
-                    <li>Bootstrap</li>
-                    <li>JavaScript</li>
-                    <li>Java</li>
-                    <li>Python</li>
-                    <li>Node.js</li>
-                    <li>Express.js</li>
-                    <li>MongoDB / SQL</li>
-                    <li>Docker</li>
-                    <li>Git</li>
-                    <li>GitHub</li>
-                    <li>WordPress</li>
-                    <li>EJS</li>
-                    <li>React.js</li>
-                    <li>JWT</li>
-                    <li>Passport.js</li>
-                    <li>npm</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="skillContainer2">
-              <div class="skillbox2">
-                <div class="skills fixedSkill_1">
-                  <ul>
-                    <li><i class="fab fa-html5" title="HTML5"></i></li>
-                    <li><i class="fab fa-css3-alt" title="CSS3"></i></li>
-                    <li><i class="fab fa-sass" title="Sass"></i></li>
-                    <li><i class="fab fa-bootstrap" title="Bootstrap"></i></li>
-                    <li><i class="fab fa-js" title="JavaScript"></i></li>
-                    <li><i class="fab fa-java" title="Java"></i></li>
-                    <li><i class="fab fa-python" title="Python"></i></li>
-                    <li><i class="fab fa-node-js" title="Node.js"></i></li>
-                    <li><i class="fas fa-server" title="Express.js"></i></li>
-                    <li>
-                      <i class="fas fa-database" title="MongoDB / SQL"></i>
-                    </li>
-                    <li><i class="fab fa-docker" title="Docker"></i></li>
-                    <li><i class="fab fa-git-alt" title="Git"></i></li>
-                    <li><i class="fab fa-github" title="GitHub"></i></li>
-                    <li><i class="fab fa-wordpress" title="WordPress"></i></li>
-                    <li><i class="fas fa-code" title="EJS"></i></li>
-                    <li><i class="fab fa-react" title="React.js"></i></li>
-                    <li><i class="fas fa-key" title="JWT"></i></li>
-                    <li>
-                      <i class="fas fa-user-lock" title="Passport.js"></i>
-                    </li>
-                    <li><i class="fab fa-npm" title="npm"></i></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="skillContainer2-text">
-              <div class="fixedSkill">
-                <div class="fixedSkills-text1">
-                  <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>Sass</li>
-                    <li>Bootstrap</li>
-                    <li>JavaScript</li>
-                    <li>Java</li>
-                    <li>Python</li>
-                    <li>Node.js</li>
-                    <li>Express.js</li>
-                    <li>MongoDB / SQL</li>
-                    <li>Docker</li>
-                    <li>Git</li>
-                    <li>GitHub</li>
-                    <li>WordPress</li>
-                    <li>EJS</li>
-                    <li>React.js</li>
-                    <li>JWT</li>
-                    <li>Passport.js</li>
-                    <li>npm</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section class="section project-section" id="project-section">
-          <h2>Projects</h2>
-          <div class="project_wrapper">
-            <div class="project_container">
-              <!-- Project Card: Portfolio -->
-              <div class="project-box">
-                <img
-                  src="./images/Project_img/Portfolio.png"
-                  alt="Screenshot of Portfolio Website"
-                />
-                <div class="project_layar">
-                  <h4>Portfolio</h4>
-                  <p>
-                    This is my personal developer portfolio website built using
-                    HTML, CSS, and JavaScript. It showcases my projects, skills,
-                    and contact information in a clean, modern, and interactive
-                    design.
-                  </p>
-                  <a
-                    href="https://github.com/Niloyns/Portfolio_2.0"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >View Code</a
+              <div id="contact-container" class="contact-flex">
+                <!-- Contact Form -->
+                <div id="contact-form-container" class="contact-form-card">
+                  <form
+                    action="https://formspree.io/f/xvgzqkov"
+                    method="POST"
+                    id="contact-form"
                   >
+                    <input
+                      id="input-name"
+                      name="name"
+                      type="text"
+                      required
+                      placeholder="Your Name"
+                      class="contact-input"
+                    />
+                    <input
+                      id="input-email"
+                      name="email"
+                      type="email"
+                      required
+                      placeholder="Your Email"
+                      class="contact-input"
+                    />
+                    <textarea
+                      id="input-message"
+                      name="message"
+                      rows="2"
+                      cols="40"
+                      placeholder="Message"
+                      class="contact-input"
+                    ></textarea>
+                    <button class="sub-btn" type="submit">SEND MESSAGE</button>
+                  </form>
                 </div>
-              </div>
-              <!-- Project Card: Transaction Tracker -->
-              <div class="project-box">
-                <img
-                  src="./images/Project_img/Transaction_Tracker.png"
-                  alt="Screenshot of Transaction Tracker App"
-                />
-                <div class="project_layar">
-                  <h4>Transaction-Tracker</h4>
-                  <p>
-                    A simple and interactive finance tracking application built
-                    with Node.js, Express, MongoDB, and EJS that allows users to
-                    add, view, and delete transactions in real-time with dynamic
-                    total balance updates.
-                  </p>
-                  <a
-                    href="https://github.com/Niloyns/Transaction-Tracker"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >View Code</a
-                  >
-                </div>
-              </div>
-              <!-- Project Card: Myntra Clone -->
-              <div class="project-box">
-                <img
-                  src="./images/Project_img/Myntra.png"
-                  alt="Screenshot of Myntra Clone Website"
-                />
-                <div class="project_layar">
-                  <h4>MyntraClone</h4>
-                  <p>
-                    A fully responsive clone of Myntra's website designed using
-                    HTML, CSS, and JavaScript. This project replicates the look
-                    and feel of Myntra's homepage and includes various UI/UX
-                    elements such as a header, navigation bar, search bar,
-                    banners, and footer sections with promises.
-                  </p>
-                  <a
-                    href="https://github.com/Niloyns/MyntraClone"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >View Code</a
-                  >
-                </div>
-              </div>
-              <!-- Project Card: Calculator -->
-              <div class="project-box">
-                <img
-                  src="./images/Project_img/Calculator.png"
-                  alt="Screenshot of Calculator App"
-                />
-                <div class="project_layar">
-                  <h4>Calculator</h4>
-                  <p>
-                    A simple calculator web app for basic arithmetic operations,
-                    designed with a clean and intuitive interface using HTML,
-                    CSS, and JavaScript.
-                  </p>
-                  <a href="#" target="_blank" rel="noopener noreferrer"
-                    >View Code</a
-                  >
-                </div>
-              </div>
-              <!-- Project Card: Alarm Clock -->
-              <div class="project-box">
-                <img
-                  src="./images/Project_img/Alarm-Clock.png"
-                  alt="Screenshot of Alarm Clock App"
-                />
-                <div class="project_layar">
-                  <h4>Alarm Clock</h4>
-                  <p>
-                    A digital alarm clock application that allows users to set,
-                    edit, and delete alarms. Built with JavaScript for real-time
-                    updates and notifications.
-                  </p>
-                  <a href="#" target="_blank" rel="noopener noreferrer"
-                    >View Code</a
-                  >
-                </div>
-              </div>
-              <!-- Project Card: IMDB Clone -->
-              <div class="project-box">
-                <img
-                  src="./images/Project_img/IMDB-Clone.png"
-                  alt="Screenshot of IMDB Clone Website"
-                />
-                <div class="project_layar">
-                  <h4>IMDB Clone</h4>
-                  <p>
-                    A clone of the IMDB website featuring movie listings,
-                    search, and details. Developed using HTML, CSS, and
-                    JavaScript for a dynamic user experience.
-                  </p>
-                  <a href="#" target="_blank" rel="noopener noreferrer"
-                    >View Code</a
-                  >
-                </div>
-              </div>
-              <!-- Project Card: Tic-tac-Toe -->
-              <div class="project-box">
-                <img
-                  src="./images/Project_img/Tic-tac-Toe.png"
-                  alt="Screenshot of Tic-tac-Toe Game"
-                />
-                <div class="project_layar">
-                  <h4>Tic-tac-Toe</h4>
-                  <p>
-                    A classic Tic-tac-Toe game for two players, built with HTML,
-                    CSS, and JavaScript. Features a responsive design and
-                    interactive gameplay.
-                  </p>
-                  <a href="#" target="_blank" rel="noopener noreferrer"
-                    >View Code</a
-                  >
-                </div>
-              </div>
-              <!-- Project Card: Portfolio2 -->
-              <div class="project-box">
-                <img
-                  src="./images/Project_img/Portfolio2.png"
-                  alt="Screenshot of Portfolio2 Website"
-                />
-                <div class="project_layar">
-                  <h4>Portfolio2</h4>
-                  <p>
-                    An updated version of my personal portfolio, showcasing
-                    advanced design and animation techniques using modern web
-                    technologies.
-                  </p>
-                  <a href="#" target="_blank" rel="noopener noreferrer"
-                    >View Code</a
-                  >
-                </div>
-              </div>
-              <!-- Project Card: Jobsitehub -->
-              <div class="project-box">
-                <img
-                  src="./images/Project_img/Jobsitehub.png"
-                  alt="Screenshot of Jobsitehub Website"
-                />
-                <div class="project_layar">
-                  <h4>Jobsitehub</h4>
-                  <p>
-                    A job listing and recruitment platform prototype, designed
-                    to connect employers and job seekers with a user-friendly
-                    interface.
-                  </p>
-                  <a href="#" target="_blank" rel="noopener noreferrer"
-                    >View Code</a
-                  >
-                </div>
-              </div>
-              <!-- Project Card: Todo API -->
-              <div class="project-box">
-                <img
-                  src="./images/Project_img/Todo_API.jpg"
-                  alt="Screenshot of Todo API Project"
-                />
-                <div class="project_layar">
-                  <h4>Todo API</h4>
-                  <p>
-                    A RESTful API for managing todo lists, built with Node.js
-                    and Express. Supports CRUD operations and integrates with a
-                    MongoDB database.
-                  </p>
-                  <a href="#" target="_blank" rel="noopener noreferrer"
-                    >View Code</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
 
-        <!-- Contact Section (animated) -->
-        <section id="contact" class="contact">
-          <h1 class="section-heading contact-title">
-            <span id="Contact"> Contact </span>
-          </h1>
-          <div id="contact-container" class="contact-flex">
-            <!-- Contact Form -->
-            <div id="contact-form-container" class="contact-form-card">
-              <form
-                action="https://formspree.io/f/xvgzqkov"
-                method="POST"
-                id="contact-form"
-              >
-                <input
-                  id="input-name"
-                  name="name"
-                  type="text"
-                  required
-                  placeholder="Your Name"
-                  class="contact-input"
-                />
-                <input
-                  id="input-email"
-                  name="email"
-                  type="email"
-                  required
-                  placeholder="Your Email"
-                  class="contact-input"
-                />
-                <textarea
-                  id="input-message"
-                  name="message"
-                  rows="2"
-                  cols="40"
-                  placeholder="Message"
-                  class="contact-input"
-                ></textarea>
-                <button class="sub-btn" type="submit">SEND MESSAGE</button>
-              </form>
-            </div>
+                <!-- Contact Details -->
+                <div id="my-details-container" class="contact-details-card">
+                  <h3>Get In Touch</h3>
+                  <p>
+                    Hi, I'm Niloy Sarkar, a Full Stack Web Developer and
+                    Software Developer. I'm currently open to new opportunities
+                    and eager to contribute my skills and expertise to your
+                    company. My background includes experience with a range of
+                    technologies and a passion for delivering high-quality
+                    solutions. I look forward to the possibility of
+                    collaborating and making a positive impact.
+                  </p>
 
-            <!-- Contact Details -->
-            <div id="my-details-container" class="contact-details-card">
-              <h3>Get In Touch</h3>
-              <p>
-                Hi, I'm Niloy Sarkar, a Full Stack Web Developer and Software
-                Developer. I'm currently open to new opportunities and eager to
-                contribute my skills and expertise to your company. My
-                background includes experience with a range of technologies and
-                a passion for delivering high-quality solutions. I look forward
-                to the possibility of collaborating and making a positive
-                impact.
-              </p>
-
-              <h3>My Address</h3>
-              <div class="my-details-info-container">
-                <i class="fas fa-map-marker-alt"></i>
-                <span>Kolkata, India 700030</span>
+                  <h3>My Address</h3>
+                  <div class="my-details-info-container">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Kolkata, India 700030</span>
+                  </div>
+                  <div class="my-details-info-container">
+                    <i class="fas fa-mobile-alt"></i>
+                    <span>+91 8759581274</span>
+                  </div>
+                  <div class="my-details-info-container">
+                    <i class="far fa-envelope"></i>
+                    <span>niloysarkar1998@gmail.com</span>
+                  </div>
+                </div>
               </div>
-              <div class="my-details-info-container">
-                <i class="fas fa-mobile-alt"></i>
-                <span>+91 8759581274</span>
-              </div>
-              <div class="my-details-info-container">
-                <i class="far fa-envelope"></i>
-                <span>niloysarkar1998@gmail.com</span>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
+            </section>
+          </main>
+        </div>
+        <!-- end .main-content -->
+      </header>
     </div>
 
     <!-- GSAP Animation Library -->
