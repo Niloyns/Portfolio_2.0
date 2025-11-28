@@ -261,17 +261,29 @@ gsap.from(".project-section h2", {
 
 const projectContainer = document.querySelector(".project_container");
 if (projectContainer) {
-  gsap.to(projectContainer, {
-    x: () => -(projectContainer.scrollWidth - window.innerWidth),
-    ease: "none",
-    scrollTrigger: {
-      trigger: ".project-section",
-      start: "top top",
-      end: () => "+=" + (projectContainer.scrollWidth - window.innerWidth),
-      scrub: 1.5,
-      pin: true,
-      anticipatePin: 1,
-      invalidateOnRefresh: true,
+  ScrollTrigger.matchMedia({
+    "(min-width: 1025px)": function () {
+      const tween = gsap.to(projectContainer, {
+        x: () => -(projectContainer.scrollWidth - window.innerWidth),
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".project-section",
+          start: "top top",
+          end: () => "+=" + (projectContainer.scrollWidth - window.innerWidth),
+          scrub: 1.5,
+          pin: true,
+          anticipatePin: 1,
+          invalidateOnRefresh: true,
+        },
+      });
+      return () => {
+        if (tween.scrollTrigger) tween.scrollTrigger.kill();
+        tween.kill();
+        gsap.set(projectContainer, { clearProps: "transform" });
+      };
+    },
+    "(max-width: 1024px)": function () {
+      gsap.set(projectContainer, { clearProps: "transform" });
     },
   });
 }

@@ -104,6 +104,69 @@ nav ul li a:hover {
   color: crimson;
 }
 
+/* ---------------------------------------
+   Responsive Layout Helpers
+---------------------------------------- */
+@media (max-width: 1200px) {
+  nav {
+    padding: 10px 6%;
+  }
+  .containt {
+    max-width: 60vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    gap: 32px;
+  }
+  .containt,
+  .image {
+    max-width: 100%;
+  }
+  .containt {
+    margin-top: 0;
+    padding: 0 4%;
+  }
+  .containt p {
+    text-align: center;
+  }
+  .social_icon {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .image {
+    display: flex;
+    justify-content: center;
+  }
+  .image img {
+    width: min(320px, 80vw);
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    padding: 10px 5%;
+  }
+  #home-section {
+    padding: 0 5% 12% 5%;
+  }
+  .sumary {
+    font-size: 0.95rem;
+  }
+  .social_icon a {
+    margin-right: 1rem;
+    height: 36px;
+    width: 36px;
+    font-size: 1.2rem;
+  }
+}
+
 /* Social Icons */
 .social_icon {
   display: flex;
@@ -394,6 +457,12 @@ nav ul li a:hover {
   line-height: 1.6;
 }
 
+@media (max-width: 1024px) {
+  .experience-section {
+    padding: 50px 6% 20px 6%;
+  }
+}
+
 @media (max-width: 768px) {
   .experience-section {
     padding: 40px 6% 10px 6%;
@@ -407,6 +476,10 @@ nav ul li a:hover {
   .experience-duration {
     margin-top: 4px;
   }
+}
+
+.experience-card + .experience-card {
+  margin-top: 0;
 }
 
 .skillSection h3 {
@@ -464,6 +537,46 @@ nav ul li a:hover {
   display: flex;
   width: max-content;
   animation: scroll-left-to-right 30s linear infinite;
+}
+
+@media (max-width: 1024px) {
+  .skillSection {
+    padding: 0 4%;
+  }
+  .skillContainer {
+    height: auto;
+    min-height: unset;
+  }
+  .skillbox-text {
+    animation-duration: 36s;
+  }
+  .skillContainer2,
+  .skillContainer2-text {
+    padding: 20px 4%;
+  }
+}
+
+@media (max-width: 600px) {
+  .skillSection h3 {
+    font-size: 2rem;
+  }
+  .skillContainer {
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+  }
+  .skillContainer-text {
+    height: auto;
+    padding: 12px 0;
+  }
+  .skills li i {
+    font-size: 32px;
+  }
+  .skills-text1 li,
+  .skills-text2 li {
+    font-size: 1rem;
+    padding: 6px 10px;
+  }
 }
 
 .skills-text1,
@@ -879,14 +992,25 @@ nav ul li a:hover {
 }
 
 @media (max-width: 900px) {
-  .project-box {
-    min-width: 260px;
-    max-width: 260px;
-    height: 320px;
+  .project_wrapper {
+    overflow: visible;
+    padding: 0 4%;
   }
   .project_container {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
     gap: 18px;
     padding: 20px 0 40px 0;
+  }
+  .project-box {
+    min-width: min(320px, 90vw);
+    max-width: 90vw;
+    height: auto;
+  }
+  .project-box img {
+    height: auto;
+    max-height: 240px;
   }
   .project-section {
     min-height: 100vh;
@@ -904,14 +1028,13 @@ nav ul li a:hover {
     font-size: 2rem;
     padding: 24px 0;
   }
-  .project-box {
-    min-width: 80vw;
-    max-width: 80vw;
-    height: 220px;
-  }
   .project_container {
-    gap: 10px;
+    gap: 16px;
     padding: 10px 0 20px 0;
+  }
+  .project-box {
+    min-width: 92vw;
+    max-width: 92vw;
   }
   .project_layar {
     padding: 18px 6px 6px 6px;
@@ -921,6 +1044,21 @@ nav ul li a:hover {
     min-height: 100vh;
     padding-top: 15vh;
     padding-bottom: 15vh;
+  }
+}
+
+@media (hover: none) and (max-width: 900px) {
+  .project-box {
+    height: auto;
+  }
+  .project-box img {
+    filter: none;
+  }
+  .project_layar {
+    position: relative;
+    opacity: 1;
+    pointer-events: auto;
+    background: rgba(0, 0, 0, 0.45);
   }
 }
 
