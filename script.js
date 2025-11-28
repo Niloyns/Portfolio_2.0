@@ -215,6 +215,37 @@ gsap.from(".fixedSkill_1 ul i", {
 });
 
 // =====================
+// EXPERIENCE SECTION ANIMATION
+// =====================
+gsap.from(".experience-section h3", {
+  scale: 0.8,
+  opacity: 0,
+  duration: 0.9,
+  scrollTrigger: {
+    trigger: ".experience-section",
+    start: "top 85%",
+    end: "top 60%",
+    scrub: 1.5,
+  },
+});
+
+gsap.utils.toArray(".experience-card").forEach((card, index) => {
+  gsap.from(card, {
+    opacity: 0,
+    y: 80,
+    duration: 0.8,
+    ease: "power2.out",
+    delay: index * 0.08,
+    scrollTrigger: {
+      trigger: card,
+      start: "top 90%",
+      end: "top 60%",
+      scrub: 1,
+    },
+  });
+});
+
+// =====================
 // PROJECT SECTION ANIMATION
 // =====================
 gsap.from(".project-section h2", {
